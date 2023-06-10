@@ -73,7 +73,8 @@ export default async function handler(
 
   const availableTimes = possibleTimes.filter((time) => {
     const isTimeBlocked = blockedTimes.some(
-      (blockedTime) => blockedTime.date.getHours() === time,
+      (blockedTime) =>
+        dayjs.tz(blockedTime.date, 'America/Sao_Paulo').get('hours') === time,
     )
 
     const isTimeInPast = referenceDate.set('hour', time).isBefore(new Date())
