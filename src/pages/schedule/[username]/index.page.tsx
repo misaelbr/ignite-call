@@ -18,7 +18,7 @@ export default function Schedule({ user }: ScheduleProps) {
     <>
       <NextSeo
         title={`Agendar com ${user.name} | Ignite Call`}
-        description={`Saiba mais sobre e faça seu agendamento com ${user.name} | ${user.bio} }`}
+        description={`Saiba mais sobre e faça seu agendamento com ${user.name} | ${user.bio}`}
       />
       <Container>
         <UserHeader>
