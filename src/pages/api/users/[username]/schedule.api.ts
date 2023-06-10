@@ -62,7 +62,7 @@ export default async function handler(
       name,
       email,
       observations,
-      date: schedulingDate.tz('America/Sao_Paulo').toDate(),
+      date: schedulingDate.toDate(),
       user_id: user.id,
     },
   })
