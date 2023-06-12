@@ -43,7 +43,6 @@ export function ConfirmStep({
   }
 
   async function handleConfirmScheduling(data: ConfirmFormData) {
-    console.log(data)
     const { name, email, observations } = data
 
     await api.post(`/users/${username}/schedule`, {

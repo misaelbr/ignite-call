@@ -10,7 +10,6 @@ export function ScheduleForm() {
   }
 
   if (selectdDateTime) {
-    console.log(selectdDateTime)
     return (
       <ConfirmStep
         schedulingDate={selectdDateTime}
